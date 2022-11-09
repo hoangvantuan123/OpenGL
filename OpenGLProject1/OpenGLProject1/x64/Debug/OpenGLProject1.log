@@ -1,0 +1,3 @@
+﻿  main.cpp
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  OpenGLProject1.vcxproj -> D:\OpenGL\OpenGLProject1\x64\Debug\OpenGLProject1.exe
