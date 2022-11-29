@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\OpenGLProject1\\Debug",
+    "\\OpenGL_1",
+    "\\OpenGL_1\\x64"
   ],
-  "PreviewInSolutionExplorer": false
+  "SelectedNode": "\\OpenGL_1\\main.cpp",
+  "PreviewInSolutionExplorer": true
 }
