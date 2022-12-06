@@ -1,3 +1,13 @@
-﻿  menu.cpp
+﻿  Bai1.cpp
+D:\OpenGL\Project1\Bai1.cpp(31,22): warning C4305: 'initializing': truncation from 'double' to 'GLfloat'
+D:\OpenGL\Project1\Bai1.cpp(32,11): warning C5033: 'register' is no longer a supported storage class
+D:\OpenGL\Project1\Bai1.cpp(37,14): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+D:\OpenGL\Project1\Bai1.cpp(39,55): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+D:\OpenGL\Project1\Bai1.cpp(39,32): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\OpenGL\Project1\Bai1.cpp(39,16): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\OpenGL\Project1\Bai1.cpp(45,14): warning C4244: '=': conversion from 'int' to 'GLfloat', possible loss of data
+D:\OpenGL\Project1\Bai1.cpp(47,57): warning C4305: 'argument': truncation from 'double' to 'GLfloat'
+D:\OpenGL\Project1\Bai1.cpp(47,34): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
+D:\OpenGL\Project1\Bai1.cpp(47,16): warning C4244: 'argument': conversion from 'double' to 'GLfloat', possible loss of data
   Project1.vcxproj -> D:\OpenGL\Project1\x64\Debug\Project1.exe
           1 file(s) copied.

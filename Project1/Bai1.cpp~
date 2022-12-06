@@ -1,0 +1,76 @@
+﻿
+#include <GL/glut.h>
+#include<math.h>
+#include <stdio.h>
+#include "Bai1.h"
+
+#define PI 3.14159265358979324
+
+#define M  180  
+#define N  25  
+void drawFilledelipse()
+{
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+	glColor3f(1.0, 1.0, 1.0);
+
+	glBegin(GL_TRIANGLE_FAN);
+
+	glVertex2f(0, 0);
+		for (int i = 0; i <= M; i++) 
+		{
+			double anglex = 2.0 * PI ;
+			double x = cos(i * anglex / M);
+			double y = sin(i * anglex / M);
+			glVertex2f(x, y);
+		}
+	glEnd();
+
+	glFlush();
+}
+
+void Test2()
+{
+	
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+	glBegin(GL_POLYGON);                        // Middle circle
+	double radius = 0.2;
+	double ori_x = 0.0;                         // the origin or center of circle
+	double ori_y = 0.0;
+	for (int i = 0; i <= 300; i++) {
+		double angle = 2 * PI * i / 300;
+		double x = cos(angle) * radius;
+		double y = sin(angle) * radius;
+		glVertex2d(ori_x + x, ori_y + y);
+	}
+	glEnd();
+	glFlush();
+}
+
+
+void Initialize(int w, int h) {
+	glViewport(0, 0, (GLsizei)w, (GLsizei)h);
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	gluPerspective(20.0, (GLfloat)w / (GLfloat)h, 1.0, 20.0);
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+	gluLookAt(0.0, 0.0, 9.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
+};
+int main(int argc, char** argv) {
+
+	// init GLUT and create Window
+	glutInit(&argc, argv);
+	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
+	glutInitWindowSize(676, 677);
+	glutInitWindowPosition(250, 250);
+	glutCreateWindow("Triangle Fan");
+
+	
+	glutDisplayFunc(drawFilledelipse);
+	
+	glutReshapeFunc(Initialize);
+	// chu trinh sử lý sự kiện của GLUT
+	glutMainLoop();
+
+	return 1;
+}
